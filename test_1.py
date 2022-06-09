@@ -11,10 +11,11 @@ async def main(url):
 
 if __name__ == '__main__':
     st = time()
+    
     loop = asyncio.get_event_loop()
     func = [main(i) for i in range(1, 100)]
     loop.run_until_complete(asyncio.wait(func))
     loop.close()
+    
     et = time()
-
     print(f'用时{et - st :.4f}')
