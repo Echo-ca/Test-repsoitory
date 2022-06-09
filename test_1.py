@@ -17,4 +17,4 @@ if __name__ == '__main__':
     loop.close()
     et = time()
 
-    print(f'用时{et - st :.2f}')
+    print(f'用时{et - st :.4f}')
